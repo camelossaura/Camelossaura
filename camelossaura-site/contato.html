@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato | Camelossaura</title>
+  <meta name="description" content="Entre em contato com Camelossaura (Leíze M. Heitling).">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✦</text></svg>">
+</head>
+<body>
+  <div class="stars" id="stars"></div>
+
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <span class="star-icon">✦</span>
+        <span>Camelossaura</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">☰</button>
+      <nav id="mainNav">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="publicacoes.html">Publicações</a></li>
+          <li><a href="contos.html">Contos Grátis</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="design.html">Design</a></li>
+          <li><a href="contato.html" class="active">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" style="padding-top: 1rem;">
+      <div class="section-header">
+        <h2>Contato</h2>
+        <div class="divider"></div>
+        <p>Quer falar comigo? Manda uma mensagem</p>
+      </div>
+
+      <div class="contact-grid" style="margin-top: 2rem;">
+        
+        <div class="contact-info">
+          <h3>Vamos conversar</h3>
+          <p style="color: var(--text-secondary); margin-bottom: 1.8rem; font-size: 0.95rem;">
+            Seja para falar sobre livros, design, parcerias ou só dizer oi — 
+            será um prazer receber sua mensagem.
+          </p>
+
+          <div class="contact-item">
+            <div class="icon">✉️</div>
+            <div>
+              <strong style="display: block; margin-bottom: 0.2rem;">E-mail</strong>
+              <a href="mailto:seuemail@exemplo.com">seuemail@exemplo.com</a>
+              <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.2rem;">
+                (substitua pelo seu e-mail real)
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="icon">📷</div>
+            <div>
+              <strong style="display: block; margin-bottom: 0.2rem;">Instagram</strong>
+              <a href="#" target="_blank">@seuusuario</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="icon">📚</div>
+            <div>
+              <strong style="display: block; margin-bottom: 0.2rem;">Goodreads / Outras redes</strong>
+              <a href="#">Adicione seus links aqui</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulário simples (para funcionar de verdade, precisa de backend ou serviço como Formspree) -->
+        <form class="contact-form" action="https://formspree.io/f/SEU_ID_AQUI" method="POST">
+          <div class="form-group">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" placeholder="Seu nome" required>
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+          </div>
+          <div class="form-group">
+            <label for="subject">Assunto</label>
+            <input type="text" id="subject" name="subject" placeholder="Sobre o que você quer falar?">
+          </div>
+          <div class="form-group">
+            <label for="message">Mensagem</label>
+            <textarea id="message" name="message" placeholder="Escreva sua mensagem aqui..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="align-self: flex-start;">
+            Enviar mensagem ✦
+          </button>
+          <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.5rem;">
+            Para o formulário funcionar, crie uma conta gratuita em formspree.io e 
+            substitua o action do formulário pelo seu endpoint.
+          </p>
+        </form>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo"><span>✦ Camelossaura</span></div>
+      <p class="footer-text">Fantasia • Romance • Estrelas</p>
+      <div class="social-links">
+        <a href="#" title="Instagram" aria-label="Instagram">📷</a>
+        <a href="#" title="Twitter / X" aria-label="Twitter">𝕏</a>
+        <a href="#" title="Goodreads" aria-label="Goodreads">📚</a>
+      </div>
+      <p class="copyright">© 2026 Camelossaura (Leíze M. Heitling). Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
